@@ -10,6 +10,10 @@ def read_image(image_file):
     return mpimg.imread(image_file)
 
 
+def write_image(image_file, image):
+    mpimg.imsave(image_file, image)
+
+
 def find_chessboard_corners(img, nx, ny, display=True):
 
     img = img.copy()
